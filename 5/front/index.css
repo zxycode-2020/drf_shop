@@ -1,0 +1,15 @@
+
+.ui-page {
+	background-color: #ffffff !important;
+    max-width: 640px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+}
+
+
+
+.ui-footer {
+    max-width: 640px !important;
+    margin: 0 auto !important;
+}
+

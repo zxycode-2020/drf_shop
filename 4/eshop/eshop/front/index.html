@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="index.css">    
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="index.js"></script>    
+</head>
+<body>
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>在线电商网站</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div data-role="collapsible">
+            <h1>产品分类</h1>
+            <p><a href="product_list.html?category=1" data-ajax="false">笔记本</a></p>
+            <p><a href="product_list.html?category=2" data-ajax="false">平板电脑</a></p>
+            <p><a href="product_list.html?category=3" data-ajax="false">一体机</a></p>
+            <p><a href="product_list.html?category=4" data-ajax="false">台式机</a></p>
+            <p><a href="product_list.html?category=5" data-ajax="false">服务器</a></p>
+        </div>        
+        <h3>推荐产品</h3>
+        <div class="ui-grid-a" id="view">
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home" data-ajax="false"></a></li>
+                <li><a href="usercenter.html" data-icon="user" data-ajax="false"></a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+</body>
+</html>

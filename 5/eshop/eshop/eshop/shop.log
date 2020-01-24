@@ -1,0 +1,294 @@
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=self.request.user.profile_of.delivery_address)
+  File "E:\anaconda\lib\site-packages\django\utils\functional.py", line 235, in inner
+    return func(self._wrapped, *args)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=self.request.user.profile_of.delivery_address)
+  File "E:\anaconda\lib\site-packages\django\utils\functional.py", line 235, in inner
+    return func(self._wrapped, *args)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=self.request.user.profile_of.delivery_address)
+  File "E:\anaconda\lib\site-packages\django\utils\functional.py", line 235, in inner
+    return func(self._wrapped, *args)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address)
+  File "E:\anaconda\lib\site-packages\django\utils\functional.py", line 235, in inner
+    return func(self._wrapped, *args)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "E:\anaconda\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: computerapp_order.address_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,status='0',)
+  File "E:\anaconda\lib\site-packages\rest_framework\serializers.py", line 215, in save
+    self.instance = self.create(validated_data)
+  File "E:\anaconda\lib\site-packages\rest_framework\serializers.py", line 916, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "E:\anaconda\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\db\models\query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\anaconda\lib\site-packages\django\db\models\base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "E:\anaconda\lib\site-packages\django\db\models\base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "E:\anaconda\lib\site-packages\django\db\models\base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "E:\anaconda\lib\site-packages\django\db\models\base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "E:\anaconda\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\db\models\query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "E:\anaconda\lib\site-packages\django\db\models\sql\compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\anaconda\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "E:\anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "E:\anaconda\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "E:\anaconda\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "E:\anaconda\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "E:\anaconda\lib\site-packages\django\db\backends\sqlite3\base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: computerapp_order.address_id
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address,status='0',)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address,status='0',)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address,status='0',)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.
+ERROR:django.request:Internal Server Error: /computer/order_create/
+Traceback (most recent call last):
+  File "E:\anaconda\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = get_response(request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\anaconda\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\anaconda\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\anaconda\lib\site-packages\rest_framework\views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\anaconda\lib\site-packages\rest_framework\mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "F:\lvl\day5\eshop\eshop\eshop\computerapp\views.py", line 170, in perform_create
+    serializer.save(user=user,price=product.price,address=user.profile_of.delivery_address,status='0',)
+  File "E:\anaconda\lib\site-packages\django\utils\functional.py", line 235, in inner
+    return func(self._wrapped, *args)
+  File "E:\anaconda\lib\site-packages\django\db\models\fields\related_descriptors.py", line 370, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: User has no profile_of.

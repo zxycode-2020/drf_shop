@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="index.css">    
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script src="index.js"></script>    
+</head>
+<body>
+<div data-role="page" id="usersignin">
+    <div data-role="header">
+        <h1>在线电商网站</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div data-role="collapsible">
+            <h1>会员中心</h1>
+            <p><a href="usercenter.html" data-ajax="false">会员信息</a></p>
+            <p><a href="useraddress.html" data-ajax="false">收货地址</a></p>
+            <p><a href="usercart.html" data-ajax="false">我的购物车</a></p>
+            <p><a href="userorder.html" data-ajax="false">我的订单</a></p>
+            <p><a href="userlogin.html" data-ajax="false">登录</a></p>                        
+        </div>        
+        <h3>欢迎注册！</h3>
+
+        <div>
+
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="username">用户名：</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="password">密码：</label>
+              <div class="col-sm-10"> 
+                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="last_name">姓：</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="last_name" placeholder="请输入姓氏">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="first_name">名：</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="first_name" placeholder="请输入名">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">邮箱：</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+              </div>
+            </div>
+
+
+          </form>
+          <div class="form-group"> 
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default" id="submit">注册</button>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home" data-ajax="false"></a></li>
+                <li><a href="usercenter.html" data-icon="user" data-ajax="false"></a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+</body>
+</html>
